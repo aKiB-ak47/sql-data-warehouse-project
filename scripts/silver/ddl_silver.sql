@@ -27,6 +27,8 @@ if object_id('silver.crm_cust_info', 'u') is not null
 
 	if object_id('silver.crm_prd_info', 'u') is not null
 	drop table silver.crm_prd_info;
+	go
+		
 	create table silver.crm_prd_info(
 		prd_id int,
 		prd_key nvarchar(50),
@@ -41,6 +43,8 @@ if object_id('silver.crm_cust_info', 'u') is not null
 	go
 	if object_id('silver.crm_sales_details', 'u') is not null
 	drop table silver.crm_sales_details;
+	go
+		
 	create table silver.crm_sales_details(
 		sls_ord_num nvarchar(50),
 		sls_prd_key nvarchar(50),
@@ -57,6 +61,8 @@ if object_id('silver.crm_cust_info', 'u') is not null
 
 	if object_id('silver.erp_cust_az12', 'u') is not null
 	drop table silver.erp_cust_az12;
+	go
+		
 	create table silver.erp_cust_az12(
 		cid nvarchar(50),
 		bdate date,
@@ -67,6 +73,8 @@ if object_id('silver.crm_cust_info', 'u') is not null
 
 	if object_id('silver.erp_loc_a101', 'u') is not null
 	drop table silver.erp_loc_a101;
+	go
+		
 	create table silver.erp_loc_a101(
 		cid nvarchar(50),
 		cntry nvarchar(50),
@@ -76,6 +84,8 @@ if object_id('silver.crm_cust_info', 'u') is not null
 
 	if object_id('silver.erp_px_cat_g1v2', 'u') is not null
 	drop table silver.erp_px_cat_g1v2;
+	go
+		
 	create table silver.erp_px_cat_g1v2(
 		id nvarchar(50),
 		cat nvarchar(50),
